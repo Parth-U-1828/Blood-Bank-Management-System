@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation</title>
+    <style>
+        .xyz {
+            margin-bottom: 0px;
+            background-image: url('{% static "image/homepage.jpg" %}');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 100vh; /* Ensures full viewport height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: black; /* Adjust text color for visibility */
+        }
+
+        .jumbotron {
+            margin: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    {% include "blood/navbar.html" %}
+
+    <section id="section-jumbotron" class="xyz">
+        <div class="container">
+            <h1>Be the Reason Someone Smiles Today – Donate Blood!</h1>
+            <p>Every drop counts. Save lives by donating blood.</p>
+        </div>  
+    </section>
+
+    <div class="jumbotron">
+        <p class="lead text-center">“Be the Reason Someone Smiles Today – Donate Blood!”</p>
+        <p class="text-center">- Parth</p>
+    </div>
+
+    {% include "blood/footer.html" %}
+</body>
+
+
+
+</html>
+<!--
+developed By : Parth Ugalmugale
+Instagram : https://www.instagram.com/parthugalmugale/
+-->
